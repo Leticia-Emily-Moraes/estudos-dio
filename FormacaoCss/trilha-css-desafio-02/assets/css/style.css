@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #F9F9F9;
+}
+
+header {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 56px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li#iconLogo {
+    width: 146px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li#procurar {
+    width: 404px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+}
+
+nav ul li#procurar img {
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    padding: 5px 15px;
+    font-weight: bolder;
+}
+
+nav ul li#perfil {
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li#perfil #imgPerfil {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.principal {
+    width: 952px;
+    margin: 20px;
+    gap: 10px;
+}
+
+.principal>img {
+    width: 952px;
+    height: 537px;
+}
+
+.principal .botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 902px;
+}
+
+.principal aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.principal .botoes div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+#inscreva{
+    background-color: #ff0000;
+    padding: 10px;
+    color: #fff;
+}
+
+.principal .botoes div#perfilCanal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.principal .botoes div#perfilCanal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.descricao {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.segundario {
+    width: 30%;
+}
+
+.segundario .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.segundario .videos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-weight: 300;
+}
