@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* .luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+  }
+  font-family: "Open Sans", sans-serif; */
+:root {
+    --fontHighlight: "Luckiest Guy", cursive;
+    --defaultFont: "Open Sans", sans-serif;
+    --white100: #ffffff;
+    --white200: #f6f6f6;
+    --gray400: #23272A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+body {
+    font-family: var(--defaultFont);
+    background-color: var(--white200);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('../img/HeaderBackground.jpg') no-repeat center center;
+    background-size: cover;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-family: var(--fontHighlight);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--white100);
+    width: 60%;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--white100);
+    font-family: var(--defaultFont);
+    width: 95%;
+}
+
+header article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+}
+
+header button {
+    height: 55px;
+    width: 95%;
+    background-color: var(--white100);
+    color: var(--gray400);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    align-self: center;
+    border-radius: 30px;
+}
+
+header button:last-child {
+    background-color: var(--gray400);
+    color: var(--white100);
+}
+
+main {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: var(--white100);
+    width: 100%;
+}
+
+main section:nth-of-type(even) {
+    background-color: var(--white200);
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+main section article img {
+    width: 85%;
+    align-self: center;
+    object-fit: cover;
+}
+
+main section article h2 {
+    font-family: var(--defaultFont);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gray400);
+}
+
+main section article p {
+    font-family: var(--defaultFont);
+    font-size: 1.2rem;
+    color: var(--gray400);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--gray400);
+}
+
+@media screen and (min-width: 1032px) {
+    header {
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    header article {
+        flex-direction: row;
+    }
+    header p{
+        width: 70%;
+    }
+    header h1{
+        width: auto;
+    }
+
+    header button {
+        width: auto;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section:nth-of-type(even) {
+        background-color: var(--white200);
+        flex-direction: row-reverse;
+    }
+
+}
