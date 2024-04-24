@@ -1,7 +1,7 @@
 const peso = 179;
 const Altura = 1.76;
 
-const IMC = peso / (Altura * Altura)
+const IMC = peso / Math.pow(Altura, 2) // função de potencia -> Math.pow(base, expoente) eleva a base ao expoente
 console.log("IMC: " + IMC.toFixed(2))
 
 if(IMC < 18.5){
