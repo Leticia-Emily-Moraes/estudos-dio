@@ -1,7 +1,7 @@
 const PokemomList = document.getElementById('PokemomList')
 const LoadMoreButton = document.getElementById('LoadMoreButton');
-// let pokemonCardArray = document.querySelectorAll('.pokemon-card')
-const maxRecord = 11
+
+const maxRecord = 151
 const limit = 10
 let offset = 0
 
@@ -29,15 +29,17 @@ function loadPokemonItens(offset, limit) {
 loadPokemonItens()
 
 LoadMoreButton.addEventListener('click', () => {
-    debugger
+
     offset += limit
-    // qtdRecord = offset + limit
-    // if(qtdRecord >= maxRecord){
-    //     newLimit = maxRecord - qtdRecord
-    //     loadPokemonItens(offset, newLimit)
-    //     LoadMoreButton.style.display = 'none' //ou LoadMoreButton.parentElement.removeChild(LoadMoreButton)
-    // }else{
+    const qtdRecord = offset + limit
+
+    if(qtdRecord >= maxRecord){
+
+        const newLimit = maxRecord - offset
+
+        loadPokemonItens(offset, newLimit)
+        LoadMoreButton.style.display = 'none' //ou LoadMoreButton.parentElement.removeChild(LoadMoreButton)
+    }else{
         loadPokemonItens(offset, limit)
-    // }
-    // console.log(pokemonCardArray.length)
+    }
 })
