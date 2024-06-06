@@ -1,0 +1,37 @@
+{
+    // Define o ambiente onde o código será executado
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    // Extende as configurações recomendadas do ESLint, Prettier e React
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    // Especifica a versão do parser do ECMAScript
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    // Plugins adicionais que estamos utilizando
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    // Regras personalizadas que queremos adicionar ou sobrescrever
+    "rules": {
+        "prettier/prettier": "error",  // Exibe erros para problemas encontrados pelo Prettier
+        "react/react-in-jsx-scope": "off"  // Desativa a regra que requer 'React' no escopo em arquivos JSX (para React 17+)
+    },
+    // Configurações específicas do React
+    "settings": {
+        "react": {
+            "version": "detect"  // Detecta automaticamente a versão do React a ser usada
+        }
+    }
+}
