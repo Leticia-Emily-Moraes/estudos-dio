@@ -1,0 +1,78 @@
+.Conteudo{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: 'Roboto';
+}
+
+.background{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+.infos{
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+
+input{
+    border-radius: 25px;
+    width: 80%;
+    min-width: 250px;
+    padding: 15px;
+    padding-right: 20px;
+    border: 1px solid #999999;
+    background: transparent;
+    font-size: 18px;
+    color: #e5e5e5;
+}
+button{
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid #999999;
+    background: #2d333b;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 10px;
+}
+.Perfil{
+    display: flex;
+    gap: 30px;
+    margin: 20px 0px;
+}
+.Perfil h3{
+    color: #999999;
+    font-size: 24px;
+    margin: 0px;
+}
+
+.Perfil span, .Perfil p{
+    display: block;
+    color: #999999;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.Perfil p{
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.PhotoProfile{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #e5e5e5;
+}
+
+.Repos{
+    margin-top: 40px;
+}
+
+.Repos h1{
+    text-align: center;
+}
