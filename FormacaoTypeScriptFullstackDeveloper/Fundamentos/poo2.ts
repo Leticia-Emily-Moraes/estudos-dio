@@ -7,12 +7,15 @@ import { CompanyAccount } from "./class/CompanyAccount";
 //depositar, sacar
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, "Lele", 10);
+console.log(peopleAccount);
 peopleAccount.deposit();
-console.log(peopleAccount.getName());
 
-peopleAccount.setName("Leticia");
+// peopleAccount.deposit();
+// console.log(peopleAccount.getName());
 
-console.log(peopleAccount.getName());
+// peopleAccount.setName("Leticia");
+
+// console.log(peopleAccount.getName());
 
 const companyAccount: CompanyAccount = new CompanyAccount("DIO", 20);
-companyAccount.deposit();
+console.log(peopleAccount);
