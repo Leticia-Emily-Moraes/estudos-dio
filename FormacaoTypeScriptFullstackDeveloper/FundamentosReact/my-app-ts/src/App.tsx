@@ -1,23 +1,16 @@
 import React from "react";
-import { Card } from "./components/Card.tsx";
-import { Layout } from "./components/Layout.tsx";
+import { Geral, Box, Input, Button } from "./style.tsx";
 
 function App() {
 	return (
-		<Layout>
-			<Card
-				id={1}
-				textCard="Ola ola 1"
-			/>
-			<Card
-				id={2}
-				textCard="Ola ola 2"
-			/>
-			<Card
-				id={3}
-				textCard="Ola ola 3"
-			/>
-		</Layout>
+		<Geral>
+			<Box>
+				<h1>Faça o login</h1>
+				<Input type="email" placeholder="Email"/>
+				<Input type="password" placeholder="Senha"/>
+				<Button><b>Entrar</b></Button>
+			</Box>
+		</Geral>
 	);
 }
 
