@@ -1,10 +1,15 @@
 import React from "react";
-import "./style.css";
+import { Box, Image } from "./style";
+import DioLogo from "../../assets/DioLogo.png";
 
 export const Header = () => {
 	return (
-		<div className="header">
+		<Box>
+			<Image
+				src={DioLogo}
+				alt=""
+			/>
 			<h1>Dio Bank</h1>
-		</div>
+		</Box>
 	);
 };

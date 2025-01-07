@@ -1,16 +1,15 @@
 import React from "react";
-import { Geral, Box, Input, Button } from "./style";
+import { Geral } from "./style";
+import { Layout } from "./components/Layout";
+import { Card } from "./components/Card";
 
 function App() {
 	return (
-		<Geral>
-			<Box>
-				<h1>Faça o login</h1>
-				<Input type="email" placeholder="Email"/>
-				<Input type="password" placeholder="Senha"/>
-				<Button><b>Entrar</b></Button>
-			</Box>
-		</Geral>
+		<Layout>
+			<Geral>
+				<Card></Card>
+			</Geral>
+		</Layout>
 	);
 }
 
