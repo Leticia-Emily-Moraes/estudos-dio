@@ -1,5 +1,5 @@
 import React from "react";
-import { Geral, Box, Input, Button } from "./style.tsx";
+import { Geral, Box, Input, Button } from "./style";
 
 function App() {
 	return (
