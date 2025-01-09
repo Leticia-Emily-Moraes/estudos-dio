@@ -1,9 +1,9 @@
-import React from "react";
+import * as React from "react";
 import { ButtonStyle } from "./style";
 
 interface InterfaceButton {
 	title: string;
-	onClick: () => void;
+	onClick: React.MouseEventHandler;
 }
 
 export const Button = ({ title, onClick }: InterfaceButton) => {
