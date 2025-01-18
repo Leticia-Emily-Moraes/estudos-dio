@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios do ambiente
+node_modules/
+.pnp
+.pnp.js
+
+# Arquivos de build
+build/
+dist/
+
+# Dependências locais
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache e relatórios de teste
+.cache/
+jest/
+coverage/
+
+# Arquivos TypeScript
+*.tsbuildinfo
+
+# Configurações do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários do sistema
+*.tmp
+*.temp
+
+# Pacotes de bloqueio do package manager (caso você queira evitar conflitos)
+package-lock.json
+yarn.lock
+
+# Arquivos de configuração do ESLint e Prettier locais (gerados pelo usuário)
+.eslintcache
+prettier-debug.log
+
+# Outros
+*.log

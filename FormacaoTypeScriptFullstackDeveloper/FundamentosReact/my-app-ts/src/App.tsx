@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from "react";
 import { Geral } from "./style";
 import { Layout } from "./components/Layout";
 import { Card } from "./components/Card";
