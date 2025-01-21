@@ -1,6 +1,6 @@
 package getstarted;
 
-public class tiposPrimitivos {
+public class TiposPrimitivos {
     public static void main(String[] args) {
         // da menor memoria para a maior
         byte n1 = 1;
