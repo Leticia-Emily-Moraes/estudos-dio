@@ -1,4 +1,4 @@
-package main.java.getstarted;
+package getstarted;
 
 import java.util.Scanner;
 
