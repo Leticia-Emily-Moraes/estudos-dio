@@ -36,5 +36,35 @@ public class Exercicios {
         } else {
             System.out.println("Obesidade grau III (mórbida).");
         }
+
+        //exercicio 3
+
+        System.out.println("Digite um número:");
+        var numMenor = scan.nextInt();
+        System.out.println("Digite um número maior que o anterior:");
+        var numMaior = scan.nextInt();
+
+        scan.nextLine();
+
+        System.out.println("voce quer ver os números pares ou impares: ");
+        String escolha = scan.nextLine().trim().toLowerCase();
+
+        if (escolha.equals("par")) {
+            System.out.println("Números pares entre " + numMenor + " e " + numMaior + ":");
+            for (int i = numMenor + 1; i < numMaior; i++) {
+                if (i % 2 == 0) {
+                    System.out.print(i + " ");
+                }
+            }
+        } else if (escolha.equals("ímpar")) {
+            System.out.println("Números ímpares entre " + numMenor + " e " + numMaior + ":");
+            for (int i = numMenor + 1; i < numMaior; i++) {
+                if (i % 2 != 0) {
+                    System.out.print(i + " ");
+                }
+            }
+        } else {
+            System.out.println("Escolha inválida. Digite 'par' ou 'ímpar'.");
+        }
     }
 }
