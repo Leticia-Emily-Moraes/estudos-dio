@@ -66,5 +66,28 @@ public class Exercicios {
         } else {
             System.out.println("Escolha inválida. Digite 'par' ou 'ímpar'.");
         }
+        System.out.print("\n");
+
+        //exercicio 4
+
+        System.out.print("Digite o número inicial: ");
+        int numInicial = scan.nextInt();
+
+        while (true) {
+            System.out.print("Digite um número (ou um número menor que o inicial para ignorar): ");
+            int numTentativa = scan.nextInt();
+
+            if (numTentativa < numInicial) {
+                System.out.println("Número menor que o inicial, ignorando...");
+                continue; 
+            }
+
+            if (numTentativa % numInicial != 0) {
+                System.out.println("Número não divisível por " + numInicial + ". Encerrando...");
+                break;
+            }
+
+            System.out.println("Número divisível por " + numInicial + ". Continuando...");
+        }
     }
 }
