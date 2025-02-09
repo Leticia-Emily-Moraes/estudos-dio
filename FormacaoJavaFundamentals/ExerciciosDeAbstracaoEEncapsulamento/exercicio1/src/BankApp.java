@@ -7,7 +7,7 @@ public class BankApp {
     public static void main(String[] args) {
         startAccount();
         displayMenu();
-        scanner.close();
+        scan.close();
     }
 
     private static void startAccount() {
@@ -33,7 +33,7 @@ public class BankApp {
             System.out.println("7. View account information");
             System.out.println("0. Exit");
             System.out.print("Choose an option: ");
-            option = scanner.nextInt();
+            option = scan.nextInt();
 
             processarOpcao(option);
         } while (option != 0);
