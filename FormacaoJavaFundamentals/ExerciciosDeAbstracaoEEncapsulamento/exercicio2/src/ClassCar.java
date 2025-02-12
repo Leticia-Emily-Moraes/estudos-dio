@@ -226,6 +226,7 @@ public class ClassCar {
 
     public void carInfo(){
         System.out.println("Name: " + nameCar);
+        System.out.println("Status: " + (isOn ? "On" : "Off"));
         System.out.println("Speed: KM/h" + speed);
         System.out.println("Gear: " + gear);
         System.out.println("Limit speed: " + speedLimit);
